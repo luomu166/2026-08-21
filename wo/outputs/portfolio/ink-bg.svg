@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" preserveAspectRatio="xMidYMid slice" role="img" aria-label="水墨山景背景">
+  <defs>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="soft2" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="42"/></filter>
+    <filter id="paper" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+      <feComponentTransfer in="g"><feFuncA type="linear" slope="0.05" intercept="0"/></feComponentTransfer>
+    </filter>
+    <radialGradient id="vig" cx="50%" cy="42%" r="75%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#2b2722" stop-opacity="0.10"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1440" height="1024" fill="#f5f0e6"/>
+
+  <!-- 云雾 -->
+  <ellipse cx="210" cy="170" rx="380" ry="120" fill="#ffffff" opacity="0.55" filter="url(#soft2)"/>
+  <ellipse cx="1190" cy="110" rx="430" ry="130" fill="#ffffff" opacity="0.45" filter="url(#soft2)"/>
+  <ellipse cx="760" cy="60" rx="500" ry="110" fill="#ffffff" opacity="0.35" filter="url(#soft2)"/>
+
+  <!-- 墨迹 -->
+  <path d="M170 250 C 250 160, 380 175, 430 255 C 480 335, 385 410, 265 390 C 150 370, 110 310, 170 250 Z" fill="#3a352d" opacity="0.10" filter="url(#soft2)"/>
+  <path d="M1120 300 C 1210 220, 1340 250, 1380 330 C 1420 410, 1320 480, 1200 460 C 1080 440, 1030 380, 1120 300 Z" fill="#453f37" opacity="0.10" filter="url(#soft2)"/>
+
+  <!-- 远山 -->
+  <path d="M0 620 L150 520 L280 610 L420 470 L560 600 L720 480 L880 610 L1030 500 L1200 620 L1320 540 L1440 600 L1440 1024 L0 1024 Z" fill="#cbc4b4" opacity="0.7"/>
+  <!-- 中山 -->
+  <path d="M0 700 L140 600 L300 690 L460 580 L640 700 L820 600 L1000 710 L1180 620 L1360 710 L1440 660 L1440 1024 L0 1024 Z" fill="#a9a191" opacity="0.75" filter="url(#soft)"/>
+  <!-- 近山 -->
+  <path d="M0 800 L180 700 L340 790 L540 680 L760 810 L960 700 L1140 800 L1320 720 L1440 780 L1440 1024 L0 1024 Z" fill="#575047" opacity="0.85"/>
+  <!-- 山间云雾 -->
+  <ellipse cx="430" cy="700" rx="500" ry="70" fill="#f5f0e6" opacity="0.6" filter="url(#soft)"/>
+  <ellipse cx="1090" cy="745" rx="540" ry="80" fill="#f5f0e6" opacity="0.5" filter="url(#soft)"/>
+
+  <!-- 暗角 -->
+  <rect width="1440" height="1024" fill="url(#vig)"/>
+
+  <!-- 纸张纹理 -->
+  <rect width="1440" height="1024" filter="url(#paper)"/>
+</svg>

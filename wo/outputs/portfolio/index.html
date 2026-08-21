@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>你的名字 · 作品集</title>
+  <meta name="description" content="我的个人作品集——这里展示我做过的事、做过的设计、写过的代码。">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-ink" aria-hidden="true"></div>
+
+  <!-- ======= 顶部导航 ======= -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="logo">你的名字<span class="logo-dot">.</span></a>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">关于</a></li>
+        <li><a href="#works">作品</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ======= 首页首屏 ======= -->
+    <section class="hero container">
+      <div class="hero-text reveal">
+        <p class="hero-eyebrow">你好，我是</p>
+        <h1>你的名字<span class="accent">。</span></h1>
+        <p class="hero-sub">设计师 / 开发者 / 创作者 —— 这里是我的一部分作品。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works">查看作品</a>
+          <a class="btn btn-ghost" href="#contact">联系我</a>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="hero-card">山</div>
+        <div class="hero-card hero-card-small">水</div>
+        <div class="hero-card hero-card-tiny">雲</div>
+      </div>
+    </section>
+
+    <!-- ======= 关于我 ======= -->
+    <section class="about container" id="about">
+      <h2 class="section-title reveal">关于我</h2>
+      <div class="about-grid">
+        <div class="about-avatar reveal">名</div>
+        <div class="about-text reveal">
+          <p>在这里写一段简短的自我介绍。说说你做什么、喜欢什么、相信什么，两三句话就很好。</p>
+          <p>也可以补充你的经历、所在地，或者任何想让人知道的事。</p>
+          <ul class="skills">
+            <li>设计</li>
+            <li>前端开发</li>
+            <li>插画</li>
+            <li>摄影</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= 我的作品 ======= -->
+    <section class="works container" id="works">
+      <h2 class="section-title reveal">我的作品</h2>
+      <p class="section-desc reveal">下面是精选作品，卡片上的链接可以替换成你的作品页或项目链接。</p>
+
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all">全部</button>
+        <button class="filter-btn" data-filter="design">设计</button>
+        <button class="filter-btn" data-filter="dev">开发</button>
+        <button class="filter-btn" data-filter="photo">摄影</button>
+      </div>
+
+      <div class="works-grid">
+        <article class="work-card reveal" data-category="design">
+          <a href="#" class="work-thumb work-thumb-1"><span>作品 01</span></a>
+          <div class="work-body">
+            <h3>品牌设计「山茶」</h3>
+            <p>为一家独立茶饮店设计的完整视觉识别系统。</p>
+            <div class="tags"><span>品牌</span><span>视觉</span></div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="dev">
+          <a href="#" class="work-thumb work-thumb-2"><span>作品 02</span></a>
+          <div class="work-body">
+            <h3>个人博客模板</h3>
+            <p>一个简洁的响应式博客页面，纯手写 HTML/CSS/JS。</p>
+            <div class="tags"><span>前端</span></div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="photo">
+          <a href="#" class="work-thumb work-thumb-3"><span>作品 03</span></a>
+          <div class="work-body">
+            <h3>城市夜景系列</h3>
+            <p>在街头拍摄的一组夜景照片，记录城市的光。</p>
+            <div class="tags"><span>摄影</span></div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="design">
+          <a href="#" class="work-thumb work-thumb-4"><span>作品 04</span></a>
+          <div class="work-body">
+            <h3>书籍封面《慢》</h3>
+            <p>为一本散文集设计的封面与内页排版。</p>
+            <div class="tags"><span>排版</span><span>出版</span></div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="dev">
+          <a href="#" class="work-thumb work-thumb-5"><span>作品 05</span></a>
+          <div class="work-body">
+            <h3>天气小工具</h3>
+            <p>一个调用公开 API 的极简天气卡片。</p>
+            <div class="tags"><span>前端</span><span>API</span></div>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-category="photo">
+          <a href="#" class="work-thumb work-thumb-6"><span>作品 06</span></a>
+          <div class="work-body">
+            <h3>山与海</h3>
+            <p>旅行途中拍摄的风景合集。</p>
+            <div class="tags"><span>摄影</span><span>旅行</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======= 联系我 ======= -->
+    <section class="contact container" id="contact">
+      <h2 class="section-title reveal">联系我</h2>
+      <p class="section-desc reveal">欢迎交流合作，随时给我发消息。</p>
+      <div class="contact-links reveal">
+        <a class="contact-item" href="mailto:you@example.com">📧 you@example.com</a>
+        <a class="contact-item" href="#">微信：your-wechat</a>
+        <a class="contact-item" href="#">GitHub：你的账号</a>
+        <a class="contact-item" href="#">小红书 / Behance</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 你的名字 · 用 ❤ 与 HTML 制作</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
